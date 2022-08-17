@@ -95,7 +95,7 @@ main header {
     border-radius: 8px;
 }
 
-p {
+p, code {
     font-size: 21px;
     text-decoration: underline;
 }
