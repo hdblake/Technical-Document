@@ -7,11 +7,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>How To Build A PC</title>
     </head>
     <body>
         <div class="container">
-            <nav id="navbar">
+            <nav id="navbar" class="mynavbar">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
                 <header>How To Build a PC</header>
                 <ul>
                     <li><a href="#budget" class="nav-link">Budget</a></li>
@@ -270,11 +274,21 @@
                         <li>Congratulations! If you have made it this far, everything should be working properly. You have now succesfully built your first PC! Don't be afraid to play around to learn more about it. Keep an eye out for upgrades as well if your tight on a budget now, but can afford better parts in a few months/years</li>
                     </ul>
                 </section>
-                <section id="main-section" id="finished">
+                <section class="main-section" id="finished">
                     <header>You Have Successfully Built Your First PC!</header>
                 </section>
             </main>
             <footer></footer>
         </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navbar");
+                if (x.className === "mynavbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "mynavbar";
+                }
+            }
+            </script>
     </body>
 </html>
